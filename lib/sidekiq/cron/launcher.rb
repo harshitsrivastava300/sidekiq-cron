@@ -26,7 +26,7 @@ module Sidekiq
 
       # Execute normal quiet of launcher and quiet cron poller.
       def quiet
-        cron_poller.terminate if @cron_poller
+        # cron_poller.terminate if @cron_poller
         super
       end
 
